@@ -1,0 +1,12 @@
+Captured UTC: 2026-10-17T12:50:14.063001+00:00
+GET /api/incidents/search?q=O%27Brien
+
+HTTP 500
+Content-Type: application/problem+json
+
+{
+  "type": "https://tools.ietf.org/html/rfc9110#section-15.6.1",
+  "title": "An error occurred while processing your request.",
+  "status": 500,
+  "traceId": "00-0cad6e9633d637d9dd203ffbae7089f7-c831eddd119d67c0-00"
+}

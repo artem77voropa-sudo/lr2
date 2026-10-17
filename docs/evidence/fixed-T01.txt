@@ -1,0 +1,28 @@
+Captured UTC: 2026-10-17T12:51:51.271019+00:00
+POST /api/incidents
+Content-Type: application/json
+
+{
+  "title": "  LR02 evidence incident 01  ",
+  "description": "  Навчальний опис для перевірки контракту.  ",
+  "severity": "low",
+  "occurredAtUtc": "2026-09-01T13:00:00+03:00",
+  "id": "99999999-9999-9999-9999-999999999999",
+  "ownerUserId": "10000000-0000-0000-0000-000000000002",
+  "status": "Closed"
+}
+
+HTTP 201
+Content-Type: application/json; charset=utf-8
+Location: /api/incidents/92916798-cf68-431b-a964-692f5c4af3bf
+
+{
+  "id": "92916798-cf68-431b-a964-692f5c4af3bf",
+  "title": "LR02 evidence incident 01",
+  "description": "Навчальний опис для перевірки контракту.",
+  "severity": "Low",
+  "status": "New",
+  "occurredAtUtc": "2026-09-01T10:00:00+00:00",
+  "createdAtUtc": "2026-10-17T12:51:51.1518453+00:00",
+  "updatedAtUtc": "2026-10-17T12:51:51.1518453+00:00"
+}

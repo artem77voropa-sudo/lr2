@@ -1,0 +1,25 @@
+Captured UTC: 2026-10-17T12:51:51.296064+00:00
+POST /api/incidents
+Content-Type: application/json
+
+{
+  "title": "LR02 invalid example",
+  "description": "Навчальний опис.",
+  "severity": "Low",
+  "occurredAtUtc": "2099-01-01T00:00:00Z"
+}
+
+HTTP 400
+Content-Type: application/problem+json
+
+{
+  "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+  "title": "One or more validation errors occurred.",
+  "status": 400,
+  "errors": {
+    "occurredAtUtc": [
+      "Час події обов'язковий і не може бути більш ніж на 5 хвилин у майбутньому."
+    ]
+  },
+  "traceId": "00-b3c8983138789bdda4de57427c110cac-34a7466b2187fbad-00"
+}

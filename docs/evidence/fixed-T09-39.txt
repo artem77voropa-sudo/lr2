@@ -1,0 +1,25 @@
+Captured UTC: 2026-10-17T12:51:51.304062+00:00
+POST /api/incidents
+Content-Type: application/json
+
+{
+  "title": "LR02 evidence High 39",
+  "description": "  012345678901234567890123456789012345678  ",
+  "severity": "High",
+  "occurredAtUtc": "2026-09-01T10:00:00Z"
+}
+
+HTTP 400
+Content-Type: application/problem+json
+
+{
+  "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+  "title": "One or more validation errors occurred.",
+  "status": 400,
+  "errors": {
+    "description": [
+      "Для High або Critical опис після обрізання пробілів має містити щонайменше 40 символів."
+    ]
+  },
+  "traceId": "00-80315017c90d339b21326fdf7eb69166-03cf4e15e7a7a9a7-00"
+}

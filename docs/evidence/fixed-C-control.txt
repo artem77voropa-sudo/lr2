@@ -1,0 +1,7 @@
+Captured UTC: 2026-10-17T12:51:50.982839+00:00
+GET /api/incidents/search?q=zz-no-match%27%20OR%20TRUE%20--%20
+
+HTTP 200
+Content-Type: application/json; charset=utf-8
+
+[]

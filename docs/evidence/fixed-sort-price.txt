@@ -1,0 +1,17 @@
+Captured UTC: 2026-10-17T12:51:51.016856+00:00
+GET /api/incidents/search?sortBy=price
+
+HTTP 400
+Content-Type: application/problem+json
+
+{
+  "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+  "title": "One or more validation errors occurred.",
+  "status": 400,
+  "errors": {
+    "sortBy": [
+      "Допустимі значення: createdAtUtc, severity, status."
+    ]
+  },
+  "traceId": "00-b936c9c5326a81a4531088325c246618-0508aa1e206e5041-00"
+}

@@ -1,0 +1,16 @@
+Captured UTC: 2026-10-17T12:50:13.981543+00:00
+GET /api/incidents/search?q=USB
+
+HTTP 200
+Content-Type: application/json; charset=utf-8
+
+[
+  {
+    "id": "20000000-0000-0000-0000-000000000005",
+    "title": "Перевірка USB навчальної мережі",
+    "description": "Навчальний запис для перевірки пошуку без реальних персональних даних.",
+    "severity": "Low",
+    "status": "New",
+    "createdAtUtc": "2026-08-03T09:00:00+00:00"
+  }
+]

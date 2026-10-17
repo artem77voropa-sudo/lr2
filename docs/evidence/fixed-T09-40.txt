@@ -1,0 +1,25 @@
+Captured UTC: 2026-10-17T12:51:51.316380+00:00
+POST /api/incidents
+Content-Type: application/json
+
+{
+  "title": "LR02 evidence High 40",
+  "description": "  0123456789012345678901234567890123456789  ",
+  "severity": "High",
+  "occurredAtUtc": "2026-09-01T10:00:00Z"
+}
+
+HTTP 201
+Content-Type: application/json; charset=utf-8
+Location: /api/incidents/73df6672-49ca-4854-8fee-053c3ec4ce87
+
+{
+  "id": "73df6672-49ca-4854-8fee-053c3ec4ce87",
+  "title": "LR02 evidence High 40",
+  "description": "0123456789012345678901234567890123456789",
+  "severity": "High",
+  "status": "New",
+  "occurredAtUtc": "2026-09-01T10:00:00+00:00",
+  "createdAtUtc": "2026-10-17T12:51:51.3064626+00:00",
+  "updatedAtUtc": "2026-10-17T12:51:51.3064626+00:00"
+}

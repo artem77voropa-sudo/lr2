@@ -1,0 +1,11 @@
+Локальні журнали API, 17.10.2026. Витяг без повного SQL і значень підключення.
+
+Vulnerable c5a6f5e:
+Запити B/C виконувалися з Parameters=[].
+Апостроф у D спричинив SQLSTATE 42601; клієнт отримав нейтральний 500 Problem Details.
+
+Fixed 0c6ebf8:
+Executed DbCommand (5ms) [Parameters=[@pattern='?', @pattern0='?', @p='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+Пошуковий предикат використовує ILIKE з параметрами і явним ESCAPE.
+Default порядок: created_at_utc DESC, id. Ліміт передається через @p.
+Значення q не конкатенується із SQL-командою.

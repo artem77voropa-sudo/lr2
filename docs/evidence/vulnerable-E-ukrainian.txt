@@ -1,0 +1,12 @@
+Captured UTC: 2026-10-17T12:50:14.082780+00:00
+GET /api/incidents/search?q=%D0%BA%D0%BE%D0%BC%D0%BF%27%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B3%D0%BE
+
+HTTP 500
+Content-Type: application/problem+json
+
+{
+  "type": "https://tools.ietf.org/html/rfc9110#section-15.6.1",
+  "title": "An error occurred while processing your request.",
+  "status": 500,
+  "traceId": "00-1a1919454218d4e92b5d559bd9e31388-aa0b114780937ae7-00"
+}

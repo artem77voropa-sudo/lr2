@@ -1,0 +1,24 @@
+Captured UTC: 2026-10-17T12:51:51.286991+00:00
+POST /api/incidents
+Content-Type: application/json
+
+{
+  "title": "  LR02 evidence incident 01  ",
+  "description": "  Навчальний опис для перевірки контракту.  ",
+  "severity": "low",
+  "occurredAtUtc": "2026-09-01T13:00:00+03:00",
+  "id": "99999999-9999-9999-9999-999999999999",
+  "ownerUserId": "10000000-0000-0000-0000-000000000002",
+  "status": "Closed"
+}
+
+HTTP 409
+Content-Type: application/problem+json
+
+{
+  "type": "https://tools.ietf.org/html/rfc9110#section-15.5.10",
+  "title": "Інцидент уже існує",
+  "status": 409,
+  "detail": "Незакритий інцидент із таким заголовком уже зареєстровано.",
+  "traceId": "00-57751ff2c53706b3f49d41eba40c3eec-09f3bb6388a68af1-00"
+}

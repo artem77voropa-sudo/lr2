@@ -1,0 +1,7 @@
+Captured UTC: 2026-10-17T12:51:51.003092+00:00
+GET /api/incidents/search?q=%5C
+
+HTTP 200
+Content-Type: application/json; charset=utf-8
+
+[]

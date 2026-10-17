@@ -1,0 +1,13 @@
+Captured UTC: 2026-10-17T12:51:51.103211+00:00
+GET /api/incidents/99999999-9999-9999-9999-999999999999
+
+HTTP 404
+Content-Type: application/problem+json
+
+{
+  "type": "https://tools.ietf.org/html/rfc9110#section-15.5.5",
+  "title": "Інцидент не знайдено",
+  "status": 404,
+  "detail": "Інцидент '99999999-9999-9999-9999-999999999999' не існує.",
+  "traceId": "00-d445d3e60567b81bc2ec4b15d1a0471a-a87bed6a9572e2a7-00"
+}

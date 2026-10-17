@@ -1,0 +1,24 @@
+Captured UTC: 2026-10-17T12:51:51.139839+00:00
+GET /api/incidents/severity-summary
+
+HTTP 200
+Content-Type: application/json; charset=utf-8
+
+[
+  {
+    "severity": "Low",
+    "count": 3
+  },
+  {
+    "severity": "Medium",
+    "count": 1
+  },
+  {
+    "severity": "High",
+    "count": 1
+  },
+  {
+    "severity": "Critical",
+    "count": 0
+  }
+]

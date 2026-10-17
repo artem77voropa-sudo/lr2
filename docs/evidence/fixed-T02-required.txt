@@ -1,0 +1,29 @@
+Captured UTC: 2026-10-17T12:51:51.289054+00:00
+POST /api/incidents
+Content-Type: application/json
+
+{}
+
+HTTP 400
+Content-Type: application/problem+json
+
+{
+  "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+  "title": "One or more validation errors occurred.",
+  "status": 400,
+  "errors": {
+    "title": [
+      "Заголовок обов'язковий і не може перевищувати 160 символів до обрізання пробілів."
+    ],
+    "description": [
+      "Опис обов'язковий і не може перевищувати 4000 символів до обрізання пробілів."
+    ],
+    "severity": [
+      "Допустимі значення: Low, Medium, High, Critical."
+    ],
+    "occurredAtUtc": [
+      "Час події обов'язковий і не може бути більш ніж на 5 хвилин у майбутньому."
+    ]
+  },
+  "traceId": "00-4d256ab9cffbe0930c4e80983ceb16cd-b1449894a91cddcf-00"
+}

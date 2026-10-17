@@ -1,0 +1,17 @@
+Captured UTC: 2026-10-17T12:51:51.281579+00:00
+GET /api/incidents/92916798-cf68-431b-a964-692f5c4af3bf
+
+HTTP 200
+Content-Type: application/json; charset=utf-8
+
+{
+  "id": "92916798-cf68-431b-a964-692f5c4af3bf",
+  "title": "LR02 evidence incident 01",
+  "description": "Навчальний опис для перевірки контракту.",
+  "severity": "Low",
+  "status": "New",
+  "occurredAtUtc": "2026-09-01T10:00:00+00:00",
+  "createdAtUtc": "2026-10-17T12:51:51.151845+00:00",
+  "ownerDisplayName": "Аліса Коваль",
+  "comments": []
+}
