@@ -39,7 +39,7 @@ public sealed class IncidentQueries(
     public async Task<IReadOnlyList<IncidentSeveritySummaryResponse>> GetSeveritySummaryAsync(CancellationToken cancellationToken = default)
 {
     // 1. Отримуємо дані з БД без відстеження та групуємо за Severity
-    var dbCounts = await _dbContext.Incidents
+    var dbCounts = await dbContext.Incidents
         .AsNoTracking()
         .GroupBy(i => i.Severity)
         .Select(g => new
@@ -53,7 +53,7 @@ public sealed class IncidentQueries(
     var countsDict = dbCounts.ToDictionary(x => x.Severity, x => x.Count);
 
     // 3. Доповнюємо відсутні групи нулями та формуємо сталий порядок
-    var allSeverities = Enum.GetValues<Severity>();
+    var allSeverities = Enum.GetValues<IncidentSeverity>();
     var result = new List<IncidentSeveritySummaryResponse>();
 
     foreach (var severity in allSeverities)
