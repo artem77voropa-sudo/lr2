@@ -130,3 +130,20 @@ GET {{api}}/api/incidents/99999999-9999-9999-9999-999999999999
 
 ### ЛР1: підсумок збережено; після reset Low=3, Medium=1, High=1, Critical=0
 GET {{api}}/api/incidents/severity-summary
+
+### T-02 - 161 символ у title: 400 title
+POST {{api}}/api/incidents
+Content-Type: application/json
+
+{
+  "title": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "description": "Навчальний опис.",
+  "severity": "Low",
+  "occurredAtUtc": "2026-09-01T10:00:00Z"
+}
+
+### T-02 - 4001 символ в description: 400 description
+POST {{api}}/api/incidents
+Content-Type: application/json
+
+< ./lab-02-long-description.json
